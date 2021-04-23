@@ -1,0 +1,761 @@
+/* GENERAL */
+
+body {
+    font-family: "Montserrat",sans-serif;
+    background-color: #f6f5f3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Pattaya', sans-serif;
+    color: #000;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+li::marker {
+    font-size: 1.5rem;
+}
+
+td {
+    padding: 0;
+}
+
+tr {
+    border: none;
+}
+
+table {
+    margin-bottom: 20px;
+}
+
+.flashes h4 {
+    line-height: 2;
+    margin: 0;
+    padding-top: 15px;
+}
+
+.flashes {
+    margin-bottom: 0;
+    padding-bottom: 15px;
+}
+
+[type="checkbox"].filled-in:checked+span:not(.lever):after {
+    border: 2px solid #ef6c00;
+    background-color: #ef6c00;
+}
+
+.pagination li.active {
+    background-color: #ef6c00;
+}
+
+/* /GENERAL */
+
+/* BUTTONS */
+
+.btn-small {
+    margin: 5px;
+}
+
+.btn {
+    background-color: #ef6c00;
+    font-family: "Montserrat",sans-serif;
+}
+
+.btn-like-no {
+    background-color: #ef6c00;
+}
+
+.btn-like-yes {
+    background-color: #26a69a;
+}
+
+.btn-more {
+    font-size: 1rem;
+    margin: 0;
+    float: right;
+}
+
+.purchase-button {
+    background-color: #26a69a;
+}
+
+#newsletter-button {
+    padding: 0 1rem;
+    background-color: white;
+    border: none;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+/* /BUTTONS */
+
+/* NAVBAR */
+
+nav .brand-logo {
+    display: inline-flex;
+}
+
+.img-logo {    
+    border-style: none;
+    width: 50px;
+    padding-top: 5px;
+}
+
+.text-logo {
+    font-size: 35px;
+    margin: 0 15px;
+    padding-top: 10px;
+}
+
+.nav-wrapper {
+    margin: 0 1rem;    ;
+}
+
+.main-navbar {    
+    width: 80%;
+    padding-left: 16%;
+}
+
+/* /NAVBAR */
+
+/* BREADCRUMB */
+
+.nav-breadcrumb {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.breadcrumb {
+    font-size: 18px;
+    color: rgba(0,0,0,0.7);
+}
+
+.breadcrumb::before {
+    color: rgba(0,0,0,0.7);
+}
+
+.breadcrumb:last-child {
+    color: #000;
+    cursor: default;
+    pointer-events: none;
+}
+
+/* /BREADCRUMB */
+
+/* CALLOUT */
+
+.callout-up, .callout-bottom {
+    height: 238px;
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    position: relative;
+}
+
+.callout-up:hover .overlay, .callout-bottom:hover .overlay {
+  opacity: 0.2;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000;
+}
+
+.carousel {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.carousel-item {
+    background-size: cover;
+}
+
+.callout-text {
+    position: absolute;
+}
+
+.callout-overlay {
+    height: 100%;
+    background-color: black;
+    padding-top: 20px;
+    opacity: 0.5;
+}
+
+.callout-up {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    background-image: url(/static/images/callout_top.png);    
+}
+
+.callout-bottom {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    background-image: url(/static/images/callout_bottom.png)
+}
+
+.callout {
+    padding-top: 25px;
+    width: 80%;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+.carousel {
+    height: 500px;
+}
+
+.carousel-text-heading {
+    position: absolute;
+    top: 160px;
+    right: 10%;
+    left: 10%;
+}
+
+.carousel-text-paragraph {
+    position: absolute;
+    top: 130px;
+    right: 10%;
+    left: 10%;    
+}
+
+.carousel.carousel-slider .carousel-item p {
+    font-size: 1.5rem;
+}
+
+.callout-wrapper {
+    background-color: #fff;
+}
+
+/* /CALLOUT */
+
+/* BOOK SECTION */
+
+.book-section {
+    background-color: #ef6c00;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.book-image {
+    float: right;
+    height: 400px;    
+}
+
+.book-description-section {
+    max-width: 500px;    
+}
+
+.book-heading {
+    margin-top: 40px;
+}
+
+/* /BOOK SECTION */
+
+/* REGISTER SECTION */
+
+.register-section {
+    background-color: #fff;
+    padding-top: 30px;    
+}
+
+.ramen-home-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    float: right;    
+    margin: 40px 20px;
+}
+
+/* /REGISTER SECTION */
+
+/* RECIPES SECTION */
+
+.recipe-img {
+    width: 100%;
+    height: 400px;    
+    object-fit: cover;    
+}
+
+.recipe-title {
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.recipe-subtitle {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.title-underline {
+    width: 50px;    
+    height: 3px;
+    border-radius: 2px;
+    background-color: #ef6c00;
+    border: none;    
+    margin: 10px;
+}
+
+.recipe-name {
+    margin-top: 0;
+}
+
+.category-card {    
+    background-image: url(/static/images/category_background.png);
+    background-size: cover;
+}
+
+.overlay-category {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    transition: .5s ease;
+    background-color: #000;
+}
+
+.category-text {
+    position: absolute;
+    bottom: 150px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.card .card-image img {
+    object-fit: cover;
+    height: 300px;
+}
+
+/* /RECIPE CARDS SECTION */
+
+/* NEWSLETTER */
+
+.newsletter-signup-text {
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#form-newsletter {    
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.icon-newsletter {
+    font-size: 1.5rem;
+}
+
+.icon-newsletter:hover {
+    opacity: 0.8;
+}
+
+#email-address {
+    padding: 0rem;
+    margin: 0 0 1rem 1rem;
+}
+
+/* /NEWSLETTER */
+
+/* FOOTER */
+
+footer li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer li:hover {
+    opacity: 0.8;
+}
+
+.fab {
+    font-size: 2rem;
+    margin: 0 0.5rem;
+    color: white;
+    font-weight: 400;
+}
+
+/* /FOOTER */
+
+/* FEATURES PANEL */
+
+.feature-panel {
+    height: 400px;
+    padding: 0;
+    margin-bottom: 60px;
+}
+
+.feature-icon {    
+    font-size: 2rem;    
+}
+
+.like-box {
+    margin: 50px auto 0;
+    padding-top: 70px;
+}
+
+.profile-info {
+    font-weight: bold;
+}
+
+#tag-section {
+    padding-left: 15px;
+}
+
+/* /FEATURES PANEL */
+
+/* RECIPE CONTENT */
+
+.ingredient-list:not(.browser-default) {
+    padding-left: 40px;
+}
+
+.ingredient-list:not(.browser-default) > li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+    list-style-type: disc;
+}
+
+.ingredient-panel {
+    color: white;
+    background-color: #ef6c00;
+}
+
+#recipe-steps {
+    padding-left: 100px;
+}
+
+.recipe-content {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+/* /RECIPE CONTENT */
+
+/* COMMENTS */
+
+.comment {
+    background-color: white;
+    display: inline-block;
+    padding: 20px;
+    box-shadow: 1px 1px 5px grey;
+    margin: 5px;
+}
+
+.comment-user {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.comment-date {
+    padding-left: 5px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: grey;
+}
+
+.comment-section {
+    margin-bottom: 50px;
+}
+
+/* /COMMENTS */
+
+/* USER PAGE */
+
+.user-section {
+    margin-top: 50px;
+    margin-bottom: 50px;    
+}
+
+.user-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 24px;
+}
+
+.profile-image-box {
+    display: inline-block;
+    background-color: #ef6c00;
+}
+
+.profile-image-wrapper {
+    padding: 0;
+}
+
+.profile-info-box {
+    margin-left: 40px;
+}
+
+.add-recipe-icon {
+    padding-top: 200px;
+    color: darkgrey;
+    font-size: 100px;
+    width: 100%;
+    height: 100%;
+}
+
+.add-recipe-card {
+    border-style: dashed;
+    border-color: darkgray;
+}
+
+.add-recipe-card:hover {
+    opacity: 0.8;
+}
+
+.add-category-icon {
+    padding-top: 100px;
+}
+
+/* /USER PAGE */
+
+/* CATEGORIES PAGE */
+
+.categories-box {
+    margin-bottom: 120px;
+}
+
+/* /CATEGORIES PAGE */
+
+/* MODAL */
+
+.modal-title {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    padding: 24px;
+}
+
+.modal .modal-content {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+/* /MODAL */
+
+/* EDIT PANEL */
+
+.edit-panel {
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+.edit-title {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    padding: 24px;
+}
+
+/* EDIT PANEL */
+
+/* X-LARGE SCREENS */
+
+@media only screen and (min-width: 1200px) {
+
+    .hide-on-x-large-only {
+        display: none;
+    }
+}
+
+/* /X-LARGE SCREENS */
+
+/* LARGE SCREENS */
+
+@media only screen and (max-width: 1200px) {
+
+    #welcome-user-text {
+        font-size: 2rem;
+    }
+
+    .profile-image-box .user-image {
+        margin: 10px;
+        margin-top: 20px;
+    }
+}
+
+/* /LARGE SCREENS */
+
+/* MEDIUM SCREENS */
+
+@media only screen and (max-width: 992px) {
+
+    .brand-logo {
+        margin-left: 70px;
+    }
+
+    .main-navbar {
+        width: 85%;        
+    }
+
+    .title-section {
+        margin-top: 20px;
+    }
+
+    #recipe-steps {
+        padding-left: 50px;
+    }
+
+    .recipe-content {
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+    }
+
+    .breadcrumb:before {
+        margin: 0;
+    }
+
+    .user-image {
+        width: 150px;
+        height: 150px;        
+        margin: 25px;
+    }
+
+    #welcome-user-text {
+        margin-top: 10px;
+    }
+}
+
+/* /MEDIUM SCREENS */
+
+/* SMALL SCREENS */
+
+@media only screen and (max-width: 600px) {
+
+    .main-navbar {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .nav-wrapper {
+        margin: 0;
+    }
+
+    .brand-logo {
+        float: left;
+        margin-left: 0;
+    }
+
+    .text-logo {
+        padding-top: 0;
+    }
+
+    .carousel-text-heading {
+        top: 150px;
+    }
+
+    .callout {
+        width: 100%;
+    }
+
+    .book-description-section {
+        margin-bottom: 50px;
+    }
+
+    .recipe-subtitle {
+        font-size: 1rem;
+    }
+
+    .btn-more {
+        float: none;
+        margin-top: 15px;
+    }
+
+    .register-section {
+        padding-top: 0;
+    }
+
+    .book-heading {
+        margin-top: 20px;
+    }
+
+    .book-section {
+        height: 250px;
+    }
+
+    .recipe-title {
+        font-size: 2.5rem;
+    }
+
+    .recipe-content {
+        display: block;
+    }
+
+    .recipe-img {
+        height: 200px;
+    }
+
+    .features-title {
+        margin: 5px;
+        margin-bottom: 15px;
+    }
+
+    #feature-table {
+        margin: 0;
+        margin-left: 20px;
+    }
+
+    .feature-panel {
+        height: 450px;
+    }
+
+    .like-box {        
+        margin-top: 10px;
+    }
+
+    #tag-section {
+        margin-top: 5px;
+        margin-left: 20px;
+        padding: 0;
+    }
+
+    #recipe-steps {
+        padding-left: 0px;
+    }
+
+    #query.search-field {
+        margin-left: 0;
+        width: 150px;
+    }
+
+    #search-recipes label {
+        margin: 0;
+    }
+
+    .btn-profile {
+        margin-bottom: 15px;
+    }
+
+    .add-recipe-btn {
+        margin-top: 15px;
+    }
+
+    .modal .modal-content, .modal-title {
+        width: 100%;
+    }
+}
+
+/* SMALL SCREENS */
