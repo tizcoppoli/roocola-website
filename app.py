@@ -18,7 +18,8 @@ app = Flask(__name__)
 csp = {
  'default-src': [
         '\'self\'',
-        'cdnjs.cloudflare.com'
+        'cdnjs.cloudflare.com',
+        'fonts.googleapis.com',
     ]
 }
 
