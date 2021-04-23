@@ -6,7 +6,7 @@ from flask import (
     redirect, request, session, url_for)
 from flask_paginate import Pagination, get_page_args
 from flask_pymongo import PyMongo
-from flask_talisman import Talisman
+from flask_sslify import SSLify
 from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
@@ -14,16 +14,7 @@ if os.path.exists("env.py"):
 
 
 app = Flask(__name__)
-
-csp = {
- 'default-src': [
-        '\'self\'',
-        'cdnjs.cloudflare.com',
-        'fonts.googleapis.com',
-    ]
-}
-
-Talisman(app, content_security_policy=csp)
+sslify = SSLify(app)
 
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
