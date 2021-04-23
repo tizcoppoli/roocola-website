@@ -14,7 +14,15 @@ if os.path.exists("env.py"):
 
 
 app = Flask(__name__)
-Talisman(app)
+
+csp = {
+ 'default-src': [
+        '\'self\'',
+        'cdnjs.cloudflare.com'
+    ]
+}
+
+Talisman(app, content_security_policy=csp)
 
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
