@@ -57,7 +57,7 @@ def home():
         return redirect(url_for("home"))
 
     recipes_admin = list(mongo.db.recipes.find(
-        {"created_by": "605b52c31a93cdb5624e75ba"}))
+        {"created_by": "60869420a4b9a7d0914b708b"}))
     categories = list(mongo.db.categories.find().sort("category_name", 1))
     random.shuffle(recipes_admin)
     return render_template(
